@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FormHandler</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		
+		<main class="main">
+			<section class="project">
+				
+				<div class="form__wrapper">
+
+					<fieldset class="form__fieldset">
+						<legend></legend>
+						<form action="email.php" method="POST" class="form__items" id="mainForm">
+
+						<div class="form__item">
+							
+							<label class="waving-label" for="name"  ></label>
+							<input type="text" class="form__control" id="name" name="name" placeholder="name" >
+							<p class="error-text">error</p>
+						</div>
+						<div class="form__item">
+							<label class="waving-label" for="email-right" ></label>
+							<input type="email" class="form__control" id="email-right" name="email"  placeholder="e-mail">
+							<p class="error-text">error</p>
+						</div>
+						
+						<div class="form__item-fake form__item--fake">
+							<label for="subject">
+							<input type="text" class="form__control " id="subject" name="subject"   
+							></label>
+							<p class="error-text">error</p>
+						</div>
+						<div class="form__item">
+							<label class="waving-label" for="message" ></label>
+							<textarea type="text"class="form__control" id="message"name="message"></textarea>
+							<p class="error-text ">error</p>
+						</div>
+						<div class="form__item  form__item--check ">
+							<label class="regulations">
+							<input type="checkbox" name="regulations" class="checkbox" required/> I accept the terms of contact policy.
+						</label>
+						<p class="error-text ">Acceptation is required</p>
+						
+						<div class="form__control-btns">
+							<button class="button" type="submit" id="send" class="form__control-butns--send" ><i>Send</i></button>
+						</div>
+						
+						</form>
+						
+					</fieldset>
+					<div id="response" class="popup-form ">
+						<p>Thank you for contact</p>
+						
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./index.js"></script>
+	</body>
+</html>
